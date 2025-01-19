@@ -54,7 +54,7 @@ html, body{
   align-items: center;
 }
 
-.gameStatus{
+.gameStatusWin{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,39 +65,79 @@ html, body{
   background-color: rgb(86, 122, 86);
   width: 230px;
   color:  rgb(255, 255, 255);
-  margin: 40px;
+  margin-top: 40px;
   box-shadow: 3px 3px 20px rgb(0, 0, 0);
 }
 
-.gameStatus h3{
+.gameStatusWin h3{
   font-family: "Press Start 2P", serif;
   margin: 0;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 2px;
+  word-spacing: -5px;
 }
 
-.gameStatus h3 img{
+.gameStatusWin h3 img{
   height: 15px;
 }
 
-.gameStatus p{
+.gameStatusWin p{
   font-family: Inherit;
   margin: 0;
-  font-size: 7px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.gameStatusLoose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: rgb(196, 54, 54);
+  width: 230px;
+  color:  rgb(255, 255, 255);
+  margin-top: 40px;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0);
+}
+
+.gameStatusLoose h3{
+  font-family: "Press Start 2P", serif;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  word-spacing: -5px;
+}
+
+.gameStatusLoose h3 img{
+  height: 15px;
+}
+
+.gameStatusLoose p{
+  font-family: Inherit;
+  margin: 0;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
 .hangmanSection {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-left: 165px;
+  position: relative;
+  width: 150px;
+  height: 100px;
   margin-bottom: 50px;
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
 .hangmanStand{
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,16 +165,21 @@ html, body{
 }
 
 .standTip{
+  position: absolute;
+  bottom: 80px;
   height: 13px;
   width: 3px;
-  background-color: rgb(255, 255, 255);
-  margin-left: -20.5px;
-  margin-bottom: 60px;
+  background-color: rgb(209, 207, 207);
+  margin-bottom: -15px;
+  margin-left: 59.5px;
 }
 
 .hangmanBody{
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-13px) translateY(23px);
+
 }
 
 .head{
@@ -239,6 +284,18 @@ html, body{
   cursor: pointer;
 }
 
+.keyboard button.correct{
+  background-color: rgb(78, 173, 78);
+}
+
+.keyboard button.wrong{
+  background-color: rgb(228, 73, 73);
+}
+
+.keyboard button:active{
+  background-color: rgb(255, 218, 137);
+}
+
 .newGameBtn{
   padding: 15px 30px;
   background-color: rgb(132, 204, 238);
@@ -248,4 +305,8 @@ html, body{
   word-spacing: -3px;
   box-shadow: 5px 5px 20px black;
   cursor: pointer;
+}
+
+.newGameBtn:active{
+  background-color: rgb(195, 236, 255);
 }

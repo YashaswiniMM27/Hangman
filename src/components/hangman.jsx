@@ -1,4 +1,15 @@
-export default function Hangman(){
+export default function Hangman({wrongGuessCount}){
+
+    const hangmanParts = [
+        <div className="head" key="head" />,
+        <div className="body" key="body" />,
+        <div className="leftArm" key="leftArm" />,
+        <div className="rightArm" key="rightArm" />,
+        <div className="leftLeg" key="leftLeg" />,
+        <div className="rightLeg" key="rightLeg" />,
+    ]
+
+
     return(
         <div className="hangmanSection">
             <section className="hangmanStand">
@@ -8,12 +19,7 @@ export default function Hangman(){
             </section>
             <div className="standTip"></div>
             <section className="hangmanBody">
-                <div className="head" />
-                <div className="body" />
-                <div className="leftArm" />
-                <div className="rightArm" />
-                <div className="leftLeg" />
-                <div className="rightLeg" />
+                {hangmanParts.slice(0, wrongGuessCount)}
             </section>
         </div>
     )

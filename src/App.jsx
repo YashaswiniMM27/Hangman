@@ -1,4 +1,4 @@
-import HangmanMainContent from "./Hangman"
+import HangmanMainContent from "./HangmanContent.jsx"
 
 function App() {
 

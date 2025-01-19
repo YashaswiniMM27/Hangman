@@ -1,10 +1,14 @@
-export default function GameStatus(){
+export default function GameStatus({isGameOver, isGameWinner}){
     return (
         <section className="statusContainer">
-            <div className="gameStatus">
+            {isGameWinner && <div className="gameStatusWin">
             <h3>YOU WIN!<img src="/src/assets/party-popper.png" alt="partPopper" /></h3>
-            <p>The Hangman Lives to See Another Word :)</p>
-        </div>
+            <p>You got the W, no cap!</p>
+        </div>}
+        {isGameOver && <div className="gameStatusLoose">
+            <h3>YOU LOOSE!<img src="/src/assets/loose.webp" alt="partPopper" /></h3>
+            <p>Well, that was an epic fail</p>
+        </div>}
         </section>
     )
 }

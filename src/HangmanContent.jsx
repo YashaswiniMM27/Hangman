@@ -7,8 +7,6 @@ export default function HangmanMainContent(){
     return(
         <main className="hangman">
             <Header/>
-            <GameStatus/>
-            <Hangman/>
             <Guess/>
         </main>
     )
