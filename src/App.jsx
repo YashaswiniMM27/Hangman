@@ -1,10 +1,10 @@
-import Hangman from "./Hangman"
+import HangmanMainContent from "./Hangman"
 
 function App() {
 
   return (
     <>
-      <Hangman/>
+      <HangmanMainContent/>
     </>
   )
 }
