@@ -9,7 +9,7 @@ html, body{
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  background-color: rgb(133, 108, 108);
+  background-color: rgb(192, 163, 163);
 }
 
 .press-start-2p-regular {
@@ -64,7 +64,7 @@ html, body{
   border-radius: 10px;
   background-color: rgb(86, 122, 86);
   width: 230px;
-  color:  rgb(209, 207, 207);
+  color:  rgb(255, 255, 255);
   margin: 40px;
   box-shadow: 3px 3px 20px rgb(0, 0, 0);
 }
@@ -93,7 +93,7 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-left: 130px;
+  margin-left: 165px;
   margin-bottom: 50px;
 }
 
@@ -187,4 +187,65 @@ html, body{
   margin-left: 2px;
   margin-top: -15px;
   transform: rotate(-45deg);
+}
+
+.guessingSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wordSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.wordSection span{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: inherit;
+  margin: 0 5px;
+  box-shadow: 7px 7px 10px rgb(26, 25, 25);
+  border-bottom: 3px solid rgb(161, 161, 161);
+  color: rgb(219, 219, 219);
+}
+
+.keyboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.keyboard button{
+  height: 40px;
+  width: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(206, 161, 65);
+  font-weight: 600;
+  box-shadow: 2px 2px 20px black;
+  cursor: pointer;
+}
+
+.newGameBtn{
+  padding: 15px 30px;
+  background-color: rgb(132, 204, 238);
+  border: none;
+  border-radius: 7px;
+  font-family: "Press Start 2P", serif;
+  word-spacing: -3px;
+  box-shadow: 5px 5px 20px black;
+  cursor: pointer;
 }
