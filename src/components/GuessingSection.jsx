@@ -1,11 +1,12 @@
 import { useState } from "react"
 import Hangman from "./hangman"
 import GameStatus from "./GameStatus"
-import { getRandonWord } from "../helpers/getRandomWord"
+import { getRandomWord } from "../helpers/getRandomWord"
+import Confetti from 'react-confetti'
 
 export default function Guess(){
     
-    const [currentWord, setCurrentWord] = useState(getRandonWord())
+    const [currentWord, setCurrentWord] = useState("react")
 
     const [lettersChosen, setLettersChosen] = useState([])
 
@@ -45,11 +46,12 @@ export default function Guess(){
 
     return (
         <div className="guessingSection">
+            {hasWon && <Confetti/>}
             <GameStatus isGameOver={disable} isGameWinner={hasWon}/>
             <Hangman wrongGuessCount={wrongGuessCount} />
             <div className="wordSection">{letterElements}</div>
             <div className="keyboard">{keyboardElement}</div>
-            {disable && <button className="newGameBtn" onClick={() => window.location.reload()}>NEW GAME</button>}
+            {(disable || hasWon) && <button className="newGameBtn" onClick={() => window.location.reload()}>NEW GAME</button>}
         </div>
     )
 }
