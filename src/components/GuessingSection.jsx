@@ -6,7 +6,7 @@ import Confetti from 'react-confetti'
 
 export default function Guess(){
     
-    const [currentWord, setCurrentWord] = useState("react")
+    const [currentWord, setCurrentWord] = useState(getRandomWord())
 
     const [lettersChosen, setLettersChosen] = useState([])
 
