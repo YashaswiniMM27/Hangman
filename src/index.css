@@ -27,6 +27,27 @@ html, body{
   box-shadow: 6px 6px 20px black;
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .hangman{
+    max-width: 300px;
+    padding: 50px 80px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .hangman{
+    max-width: 250px;
+    padding: 50px 80px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .hangman{
+    max-width: 220px;
+    padding: 50px 70px;
+  }
+}
+
 .header{
   display: flex;
   flex-direction: column;
@@ -42,10 +63,46 @@ html, body{
   color: rgb(209, 207, 207);
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .header p{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .header p{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .header p{
+    font-size: 14px;
+  }
+}
+
 .tagline{
   font-family: "Press Start 2P", serif;
   font-size: 9px;
   color: rgb(209, 207, 207);
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .tagline{
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .tagline{
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .tagline{
+    font-size: 5px;
+  }
 }
 
 .statusContainer{
@@ -69,6 +126,30 @@ html, body{
   box-shadow: 3px 3px 20px rgb(0, 0, 0);
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusWin{
+    padding: 7px 0;
+    width: 200px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusWin{
+    padding: 5px 0;
+    width: 180px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusWin{
+    padding: 5px 0;
+    width: 160px;
+    margin-top: 20px;
+  }
+}
+
 .gameStatusWin h3{
   font-family: "Press Start 2P", serif;
   margin: 0;
@@ -78,8 +159,44 @@ html, body{
   word-spacing: -5px;
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusWin h3{
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusWin h3{
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusWin h3{
+    font-size: 6px;
+  }
+}
+
 .gameStatusWin h3 img{
   height: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusWin h3 img{
+    height: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusWin h3 img{
+    height: 8px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusWin h3 img{
+    height: 8px;
+  }
 }
 
 .gameStatusWin p{
@@ -88,6 +205,24 @@ html, body{
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 1px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusWin p{
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusWin p{
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusWin p{
+    font-size: 7px;
+  }
 }
 
 .gameStatusLoose{
@@ -105,6 +240,30 @@ html, body{
   box-shadow: 3px 3px 20px rgb(0, 0, 0);
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusLoose{
+    padding: 7px 0;
+    width: 200px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusLoose{
+    padding: 5px 0;
+    width: 180px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusLoose{
+    padding: 5px 0;
+    width: 160px;
+    margin-top: 20px;
+  }
+}
+
 .gameStatusLoose h3{
   font-family: "Press Start 2P", serif;
   margin: 0;
@@ -114,8 +273,44 @@ html, body{
   word-spacing: -5px;
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusLoose h3{
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusLoose h3{
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusLoose h3{
+    font-size: 6px;
+  }
+}
+
 .gameStatusLoose h3 img{
   height: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusLoose h3 img{
+    height: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusLoose h3 img{
+    height: 8px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusLoose h3 img{
+    height: 8px;
+  }
 }
 
 .gameStatusLoose p{
@@ -126,6 +321,24 @@ html, body{
   letter-spacing: 1px;
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .gameStatusLoose p{
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .gameStatusLoose p{
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .gameStatusLoose p{
+    font-size: 7px;
+  }
+}
+
 .hangmanSection {
   position: relative;
   width: 150px;
@@ -133,6 +346,33 @@ html, body{
   margin-bottom: 50px;
   margin-left: 80px;
   margin-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .hangmanSection {
+    height: 90px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .hangmanSection {
+    height: 70px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .hangmanSection {
+    height: 70px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
 }
 
 .hangmanStand{
@@ -179,7 +419,27 @@ html, body{
   top: 0;
   left: 50%;
   transform: translateX(-13px) translateY(23px);
+}
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .hangmanBody{
+    left: 50%;
+    transform: translateX(-13px) translateY(15px);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .hangmanBody{
+    left: 50%;
+    transform: translateX(-13px) translateY(-8px);
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .hangmanBody{
+    left: 50%;
+    transform: translateX(-13px) translateY(-8px);
+  }
 }
 
 .head{
@@ -248,6 +508,24 @@ html, body{
   margin-bottom: 40px;
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .wordSection{
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .wordSection{
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .wordSection{
+    margin-bottom: 20px;
+  }
+}
+
 .wordSection span{
   height: 40px;
   width: 40px;
@@ -264,6 +542,33 @@ html, body{
   color: rgb(219, 219, 219);
 }
 
+@media (min-width: 768px) and (max-width: 1200px){
+  .wordSection span{
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .wordSection span{
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .wordSection span{
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+}
+
 .keyboard{
   display: flex;
   justify-content: center;
@@ -271,6 +576,24 @@ html, body{
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .keyboard{
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .keyboard{
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .keyboard{
+    margin-bottom: 30px;
+  }
 }
 
 .keyboard button{
@@ -282,6 +605,27 @@ html, body{
   font-weight: 600;
   box-shadow: 2px 2px 20px black;
   cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .keyboard button{
+    height: 33px;
+    width: 28px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .keyboard button{
+    height: 30px;
+    width: 25px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .keyboard button{
+    height: 28px;
+    width: 25px;
+  }
 }
 
 .keyboard button.correct{
@@ -305,6 +649,30 @@ html, body{
   word-spacing: -3px;
   box-shadow: 5px 5px 20px black;
   cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .newGameBtn{
+    padding: 12px 20px;
+    font-size: 12px;
+    word-spacing: -4px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .newGameBtn{
+    padding: 10px 15px;
+    font-size: 10px;
+    word-spacing: -5px;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 576px){
+  .newGameBtn{
+    padding: 10px 15px;
+    font-size: 10px;
+    word-spacing: -5px;
+  }
 }
 
 .newGameBtn:active{
