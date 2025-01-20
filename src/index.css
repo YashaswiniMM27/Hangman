@@ -597,12 +597,16 @@ html, body{
 }
 
 .keyboard button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
   height: 40px;
   width: 35px;
   border-radius: 10px;
   border: none;
   background-color: rgb(206, 161, 65);
-  font-weight: 600;
   box-shadow: 2px 2px 20px black;
   cursor: pointer;
 }
@@ -641,6 +645,11 @@ html, body{
 }
 
 .newGameBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
   padding: 15px 30px;
   background-color: rgb(132, 204, 238);
   border: none;
