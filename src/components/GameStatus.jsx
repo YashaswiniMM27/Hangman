@@ -6,7 +6,7 @@ export default function GameStatus({isGameOver, isGameWinner}){
             <p>You got the W, no cap!</p>
         </div>}
         {isGameOver && <div className="gameStatusLoose">
-            <h3>YOU LOOSE!<img src="/assets/loose.webp" alt="loose" /></h3>
+            <h3>YOU LOOSE!<img src="/assets/win.png" alt="loose" /></h3>
             <p>Well, that was an epic fail</p>
         </div>}
         </section>
