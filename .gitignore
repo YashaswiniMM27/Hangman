@@ -10,8 +10,8 @@ lerna-debug.log*
 # Node modules
 node_modules/
 
-# Build output
-dist-ssr/
+# Build output (if your build folder is 'dist')
+dist/
 
 # Editor directories and files
 .vscode/*
